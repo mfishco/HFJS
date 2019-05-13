@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Treasure Map!!</title>
+    <head>
+        <script>
+            window.onload = init;
+            function init() {
+                var map = document.getElementById("map");
+                map.onmousemove = showCoords;
+            }
+            function showCoords(eventObj) {
+                var coordDisp = document.getElementById("coords");
+                var xCoord = eventObj.pageX;
+                var yCoord = eventObj.pageY;
+                coordDisp.innerHTML = "Coordinates: " + xCoord + ", " + yCoord;
+
+            }
+        </script>
+    </head>
+    <body>
+        <img src="map.jpg" id="map">
+        <p id="coords">Move mose to find coordinates...</p>
+    </body>
+</html>
