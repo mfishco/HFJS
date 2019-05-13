@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Webville Cola</title>
+        <meta charset="utf-8">
+        <script>
+
+var numbersArray = [60, 50, 62, 58, 54, 54];
+numbersArray.sort(compareNumbers);
+console.log(numbersArray);
+numbersArray.sort(compareNumbersDesc);
+console.log(numbersArray);
+
+function compareNumbers(number1, number2) {
+    if (number1 > number2) {
+        return 1;
+    } else if (number1 === number2) {
+        return 0;
+    } else if (number1 < number2) {
+        return -1;
+    }
+}
+
+function compareNumbersDesc(number1, number2) {
+    if (number1 < number2) {
+        return 1;
+    } else if (number1 === number2) {
+        return 0;
+    } else if (number1 > number2) {
+        return -1;
+    }
+}
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
